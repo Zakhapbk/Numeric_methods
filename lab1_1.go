@@ -48,7 +48,7 @@ func LU(mtr [][]float64, val []float64, m int) (A, B [][]float64, c []float64, d
 			for k := 0; k <= i-1; k++ {
 				u += (L[i][k] * U[k][j]) / L[i][i]
 			}
-			U[i][j] = mtr[i][j]/L[i][i] - u ////
+			U[i][j] = mtr[i][j]/L[i][i] - u ///
 			u = 0
 		}
 		t++
